@@ -8,6 +8,9 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { ComMainComponent } from './pur/com-main/com-main.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { Com1Component } from './pur/com1/com1.component';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -18,7 +21,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 
 
   ],
-  declarations: [AppComponent, HelloComponent,ComMainComponent,],
+  declarations: [AppComponent, HelloComponent,ComMainComponent,Com1Component],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
