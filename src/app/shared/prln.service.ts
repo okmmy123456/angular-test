@@ -18,28 +18,16 @@ export class PrlnService {
 
   addPr_n() {
     this.prdetail.push(this.newPr_n());
-  //   console.log("Add : " +this.prdetail.length)
-  //   this.indexArr = this.indexArr+1
-  //  console.log("Add arr : " +this.indexArr)
-
   }
 
   remove_Pr_n(i: number) {
-    //this.indexArr = this.indexArr-1
     this.prdetail.removeAt(i);
-   // console.log("remove Arr: "+this.indexArr) // ลบทีละ1 ตาราง
   }
 
  
   indexArr :number = 0
   remove_All() {
     this.prdetail.clear()
-
-    // while( this.prdetail.length > 1) { //ลบทั้งหมด
-    //   this.indexArr = this.indexArr-1
-    //   this.prdetail.removeAt(this.indexArr);
-    // console.log("remove Arr: "+this.indexArr)
-  // }
   }
 
 
@@ -78,10 +66,6 @@ export class PrlnService {
       if (controlName === 'qty' || controlName === 'price') {
         this.calculateAmount(i);
       }
-
-      /* if (controlName === 'amount') {
-         this.calculateAmount(i);
-       }*/
     }
   }
 
@@ -96,9 +80,6 @@ export class PrlnService {
     const amount = particularGroup.get('amount');
     amount?.setValue('');
 
-    //var array = [1,2,3,4,5];
-    //var sum = array.reduce((acc, cur) => acc + cur, 0);
-    //console.log(array[3*3])
     let ind = 0;
 
     if (qty?.value && price?.value) {
@@ -113,7 +94,6 @@ export class PrlnService {
         }, 0)
         this.ttcal = result
       }
-      //total?.setValue(this.tt);
       console.log("------------tt------------");
       console.log(this.ttcal);
 
