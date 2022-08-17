@@ -13,6 +13,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Com2Component } from './pur/com2/com2.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatIconModule} from '@angular/material/icon';
+import { PrlnService } from './shared/prln.service';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -23,11 +27,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatInputModule
 
 
   ],
   declarations: [AppComponent, HelloComponent,ComMainComponent,Com1Component,Com2Component],
   bootstrap: [AppComponent],
+  providers: [PrlnService]
 })
 export class AppModule {}
