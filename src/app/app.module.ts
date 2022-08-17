@@ -12,6 +12,7 @@ import { Com1Component } from './pur/com1/com1.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Com2Component } from './pur/com2/com2.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { Com2Component } from './pur/com2/com2.component';
     RouterModule.forRoot([{ path: '', component: ComMainComponent }]),
     ReactiveFormsModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule
 
 
   ],

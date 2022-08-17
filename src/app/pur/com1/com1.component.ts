@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PrlnService } from '../../shared/prln.service';
 
 @Component({
   selector: 'app-com1',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Com1Component implements OnInit {
 
-  constructor() { }
+  constructor( public PrlnService:PrlnService) { }
 
   ngOnInit() {
   }
