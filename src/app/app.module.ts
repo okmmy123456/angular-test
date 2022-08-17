@@ -17,6 +17,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import { PrlnService } from './shared/prln.service';
 import { MatInputModule } from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatCheckboxModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
 
 
   ],
