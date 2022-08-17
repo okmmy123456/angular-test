@@ -9,7 +9,9 @@ import { RouterModule } from '@angular/router';
 import { ComMainComponent } from './pur/com-main/com-main.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { Com1Component } from './pur/com1/com1.component';
-
+import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Com2Component } from './pur/com2/com2.component';
 
 @NgModule({
   imports: [
@@ -18,10 +20,12 @@ import { Com1Component } from './pur/com1/com1.component';
     MatCardModule,
     RouterModule.forRoot([{ path: '', component: ComMainComponent }]),
     ReactiveFormsModule,
+    MatTabsModule,
+    BrowserAnimationsModule
 
 
   ],
-  declarations: [AppComponent, HelloComponent,ComMainComponent,Com1Component],
+  declarations: [AppComponent, HelloComponent,ComMainComponent,Com1Component,Com2Component],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
