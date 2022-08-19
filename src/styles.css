@@ -1,1 +1,5 @@
 /* Add application styles & imports to this file! */
+.com2-table{
+  width: 100%;
+  overflow: scroll;
+}
